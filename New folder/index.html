@@ -11,8 +11,8 @@
 
 <body>
     <header>
-        <a href="" class="logo">SV</a>
-        <div class="hamburger">
+        <a href="index.html" class="logo">SV</a>
+        <div class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
         </div>
         <nav>
@@ -80,6 +80,16 @@
             </script>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.getElementById("hamburger");
+            const nav = document.querySelector("nav");
+
+            hamburger.addEventListener("click", function() {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
 
 
 </body>
